@@ -1,16 +1,4 @@
-/*-------------------١--------------------------*/
-/*                  ملحوظات                     */
-/*
-ملحوظة عامة:لقد  تركت لكم تعليقات لتساعدك علي تنظيم الملف بالشكل المثالي
-تأكد من أن آخر جزء هو الجزء الحاوي لكل ما هو متعلق بشكل الصفحة على الهواتف والتابلت
-إذا كان لديك أي سؤال من فضلك إرسل لي الكود وشرح المشكلة علي البريد الالكتروني
-tony@barmej.com
-*/
-/*----------------------------------------------*/
 
-
-
-/*----------------------١-----------------------*/
 /*
 Fonts & Font-faces سنقوم بوضع جميع الخطوط التي سنحتاجها هنا
 ملحوظة: إسم الخط هو إما
@@ -18,81 +6,430 @@ Avenir Next
 أو إن لم تجده فيمكنك استعمال خط 
 Lato
 */
-/*---------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-
-/*----------------------٢-----------------------*/
 /*                  DEFAULTS                    */
 /*
 يجب عليك هنا وضع أي من الأنماط العامة الخاصة بوسوم مثل
 html, body, h1, h2, p 
 وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
 */
-/*----------------------------------------------*/
+body {
+  font-family: 'Lato', sans-serif;
+}
 
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
 
-
-/*----------------------٣-----------------------*/
-/*               HELPER CLASSES                 */
-/*
-يجب عليك هنا وضع أي من الأنماط الخاصة بال
-classes
-التي ستقوم بإعادة إستخدامها في أكثر من مكان خلال عملك على الموقع 
-على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
-*/
-/*----------------------------------------------*/
-
-
-/*----------------------٤-----------------------*/
-/*                    LAYOUT                    */
-/*                البناء العام للصفحة           */
-/*----------------------------------------------*/
-
-
-
-/*----------------------٥-----------------------*/
 /*                    HEADER                    */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar-collapse{
+  background: none;
+    display: inline-block;
+ }
+ .logo{
+     margin:20px;
+ }
+ .navbar-nav{
+     margin-left:750px ;
+ }
+ .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
 /*----------------------------------------------*/
-
-
-
-/*----------------------٦-----------------------*/
 /*                     HERO                     */
-/*----------------------------------------------*/
+
+.hero{
+  margin-top: 50px;
+ margin-left: 20px;
+ 
+ }
+ * {
+  box-sizing: border-box;
+}
+
+.hero__desc {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  margin-top: 90px;
+    margin-left: 10px;
+
+}
+.hero img{
+  float: left;
+  width:60%
+ 
+
+}
+.hero__image img{
+  margin: 41px;
+
+}
 
 
+.hero .container ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-/*----------------------٧-----------------------*/
+a.button.is-primary{
+
+  color: white;
+  border-radius: 30px;
+  border: 6px rgb(72, 72, 230);
+  background-color: rgb(72, 72, 230);
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+}
+
+.hero h1{
+  font-size: 20px;
+    font-weight: bold;
+    width: max-content;
+    padding-bottom: 30px
+   
+}
+
+.hero p{
+  font-size: large;
+    font: revert;
+    width: 320px;
+  
+}
+
 /*              MEET YOUR MATCH                 */
-/*----------------------------------------------*/
+.meetYourMatch {
+  text-align: center;
+  margin-left: 0px;
+}
+.meetYourMatchــcontent h2{
+  font-size: 40px;
+  font-weight:640 ;
+padding-top: 30px;
+}
+.meetYourMatch .container {
+  background-color: #eeeffc;
+  border-radius: 20px;
+}
+.meetYourMatchــform .switcher {
+  color: gray;
+  font-size: 2rem;
+  text-align: center;
+  display: -webkit-box; 
+  display: -moz-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex;
+  display: flex;
 
+  justify-content: center;
+  flex-wrap: wrap;
 
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 
-/*----------------------٨-----------------------*/
+  height: 16vh;
+}
+.meetYourMatchــform .switcher img {
+  padding: 20px;
+}
+.meetYourMatchــform .switcher input {
+  position: absolute;
+  height: 8vh;
+  opacity: 0;
+  width: 2.79vw;
+  border: none;
+}
+.form-group input {
+  background: url(../images/map-pin.png) no-repeat scroll 20px 15px;
+  padding-left: 50px;
+  height: 50px;
+  width: 60%;
+  min-width: 7vw;
+  border-radius: 40px;
+  border: 2px solid rgb(72, 72, 230);
+  border-right: none;
+  background-color: white;
+  border-top-right-radius: 0;
+  text-align: left;
+}
+.form-group input ::placeholder {
+  color: #3329be;
+ 
+}
+.form-group button {
+  height: 7%;
+  width: 13%;
+  color: white;
+  border-radius: 30px;
+  border: 4px solid rgb(72, 72, 230);
+  background-color: rgb(72, 72, 230);
+  text-align: center;
+  position: relative;
+  right: 50px;
+}
+
+.meetYourMatch .is-searchResults {
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+}
+.meetYourMatch .widget {
+  background-color: white;
+  height: 35%;
+}
+
 /*               HOW IT WORKS                   */
-/*----------------------------------------------*/
+.howItWorks  {
 
+  padding-top: 200px;
+  padding-left: 100px;
+    
+  }
+ .container .widgets.is-howItWorks {
+    padding-top: 90px;
+    padding-bottom: 90px;
+      display: inline-flex;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+  .howItWorks h2{
+    text-align: center;
+    margin-bottom: 30px;
+    width: max-content;
+    font-size: 30px;
+    font-weight: 640;
+    padding-top: 10px
+  }
+  .howItWorks p{
+    padding: 30px;
+    width: 300px;
+    padding-left: 50px;
+    height: 90px;
+    color: #999999;
+    font-size: medium;
+    font: message-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    }
+    .howItWorks h3{
+      font-size: large; 
+    font-weight: bold; 
+    width: max-content;
+    }
 
-
-/*----------------------٩-----------------------*/
 /*                 STORIES                      */
-/*----------------------------------------------*/
+.stories{
+  background-color:#eeeffc ;
+
+}
+.stories h2{
+padding-top: 30px;
+text-align: center;
+margin-bottom: 20px;
+}
+.heading-paragraph {
+ color: #ccc9c9;
+ font-size:large;
+ font:message-box;
+ text-align: center;
+ text-indent: 10px;
+font-family:Arial, Helvetica, sans-serif;
+
+}   
+.stories .widgets{
+display: inline-flex;
+justify-items: center;
+flex-wrap: wrap;
+}
+.stories .widget{
+  width: 250px;
+margin:  60px;
 
 
+}
+.stories .widget__imag{
+padding: 40px;
+}
+.stories .widget__desc h3{
+  font-size:20px ;
+  font: large;
+}
 
-/*----------------------١٠----------------------*/
+.stories .widget__desc a{
+   font:small;
+   font-weight: bold;
+   color:blue;
+}
+
 /*       Actions: Change A Life, Adopt A Pet    */
-/*----------------------------------------------*/
+.actions{
+  background-color: rgb(21, 21, 196);
+ 
+}
+
+.actions .container{
+padding:90px ;
+margin-bottom: 90px;
+text-align: center;
+}
+.actions h2{
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
 
 
+}
+a.button.is-secondary {
+border-radius: 60px;
+color: rgb(50, 73, 205);
+background-color: white;
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+font: menu;
+font-weight: 800;
 
-/*---------------------١١-----------------------*/
+}
+
+a.button.is-outline{
+border-radius: 60px;
+color: white;
+background-color: rgb(21, 21, 196);
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+font: menu;
+font-weight: 800;
+border:solid white;
+}
+.actions a {
+justify-items: center;
+align-items: center;
+margin-right: 90px;
+
+}
 /*                    FOOTER                    */
-/*----------------------------------------------*/
+footer .container{
+  margin-top: 80px;
+}
+.copyrights{
+float: left;
+margin-right: 1.25em;
+margin-bottom: 2em;
 
+}
+.copyrights img{
+  font-weight: 400;
+text-transform: lowercase;
+font-size: 1.5rem;
+}
+.copyrights p{
+  font-size: initial;
+}
+.copyrights a{
+color: black;
+}
+  .footer-nav{
+      display: flex;
+      flex-flow: row wrap;
+   
+  }  
+  .footer__nav > * {
+      flex: 1 50%;
+      margin-right: 1.25em;
+    }
+   .footer-nav .item ul {
+      list-style-type: none;
+     
+    }
+    .footer-nav .item a{
+  color:#999;
+    }
+    .footer-nav .item h5{
+        font: menu;
+        font-weight: 800;
+    }
 
-
-/*----------------------١٢----------------------*/
 /*                    Responsive                */
 /*       كل ما هو متعلق بالهواتف والتابلت       */
-/*----------------------------------------------*/
+@media screen and (max-width: 500px) {
+  .meetYourMatch {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .body {width: 100%;}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .body {width: 8.33%;}
+  .body {width: 16.66%;}
+  .body {width: 25%;}
+ 
+}
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  
+  @media only screen and (min-width: 1200px) {.body{
+  
+  }}
+}
+
+
