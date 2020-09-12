@@ -24,9 +24,10 @@
 <img src="images/logo.png" alt="Pretty Pets Logo"> 
 </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+ 
 
   <div class="navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
@@ -46,26 +47,25 @@
 <main>
                 <section class="hero">
                     <div class="container">
-                        <div class="hero__desc">
-                            <h1>Find and Adopt a pet Near You</h1>
-                            <p>There are so many loving adoptable pets right in your community waiting for a family to call
-                                their own. </p>
-                            <a href="#" class="button is-primary">Find a pet</a>
-                          
-                        </div>
-                        <div class="hero__image">
-                            <img src="images/hero-image.png" alt="Hero Image" />
-                        </div>
+  <div class="hero__desc">
+      <h1>Find and Adopt a pet Near You</h1>
+      <p>There are so many loving adoptable pets right in your community waiting for a family to call
+          their own. </p>
+      <a href="#" class="button is-primary">Find a pet</a>
+                    </div>
+  <div class="hero__image">
+      <img src="images/hero-image.png" alt="Hero Image" />
+  </div>
                     </div>
                 </section>
                 <section class="meetYourMatch">
                     <div class="container">
-                        <div class="meetYourMatch__background"></div>
-                        <!--ربما ستحتاج هذا العنصر الخالي لعمل نمط الخلفية-->
-                        <div class="meetYourMatchــcontent">
-                            <h2>Meet Your Match</h2>
-                            <form action="#" class="meetYourMatchــform">
-                                <div class="switcher">
+  <div class="meetYourMatch__background"></div>
+  <!--ربما ستحتاج هذا العنصر الخالي لعمل نمط الخلفية-->
+  <div class="meetYourMatchــcontent">
+      <h2>Meet Your Match</h2>
+      <form action="#" class="meetYourMatchــform">
+          <div class="switcher">
                                     <label for="dog">
                                         <input id="dog" name="animal_type" type="checkbox" />
                                         <img src="images/pets/dog.png" alt="dog image">
@@ -77,52 +77,42 @@
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" placeholder="Entre  your city" />
+                                    <input type="text" class="petsearch" id="sanimals" placeholder="Entre  your city" />
                                     <button class="button is-primary" type="submit">search</button>
                                 </div>
                             </form>
-                            <div class="widgets is-searchResults">
-                                <div class="widget">
-                                    <div class="widget__image">
-                                        <img src="images/pet-01.png" alt="pet image">
+                            <div class="thewidget">
+                              <!-- <div class="widgets is-searchResults">
+                                    <div class="widget">
+                                        <div class="widget__image">
+                                            <img src="images/pet-01.png" alt="pet image">
+                                        </div>
+                                        <div class="widget__desc">
+                                            <h4>Rocco</h4>
+                                            <p>Male | Young</p>
+                                            <p>Los Angeles CA</p>
+                                        </div>
+              </div>
+              <div class="widget">
+                  <div class="widget__image">
+<img src="images/pet-02.png" alt="pet image">
+                  </div>
+                  <div class="widget__desc">
+                                            <h4>Chanona</h4>
+                                            <p>Male | Young</p>
+                                            <p>Los Angeles CA</p>
+                                        </div>
                                     </div>
-                                    <div class="widget__desc">
-                                        <h4>Rocco</h4>
-                                        <p>Male | Young</p>
-                                        <p>Los Angeles CA</p>
-                                    </div>
-                                </div>
-                                <div class="widget">
-                                    <div class="widget__image">
-                                        <img src="images/pet-02.png" alt="pet image">
-                                    </div>
-                                    <div class="widget__desc">
-                                        <h4>Chanona</h4>
-                                        <p>Male | Young</p>
-                                        <p>Los Angeles CA</p>
-                                    </div>
-                                </div>
-                                <div class="widget">
-                                    <div class="widget__image">
-                                        <img src="images/pet-03.png" alt="pet image">
-                                    </div>
-                                    <div class="widget__desc">
-                                        <h4>Morio</h4>
-                                        <p>Male | Young</p>
-                                        <p>Los Angeles CA</p>
-                                    </div>
-                                </div>
-                                <div class="widget">
-                                    <div class="widget__image">
-                                        <img src="images/pet-04.png" alt="pet image">
-                                    </div>
-                                    <div class="widget__desc">
-                                        <h4>danio</h4>
-                                        <p>Male | Young</p>
-                                        <p>Los Angeles CA</p>
-                                    </div>
-                                </div>
-                            </div>
+                                    <div class="widget">
+                                        <div class="widget__image">
+                                            <img src="images/pet-03.png" alt="pet image">
+                                        </div>
+                                        <div class="widget__desc">
+                                            <h4>Morio</h4>
+                                            <p>Male | Young</p>
+                                            <p>Los Angeles CA</p>
+                                        </div> -->
+                           </div>
                         </div>
                     </div>
                 </section>
@@ -174,17 +164,18 @@
                                     <img src="images/stories/1.png" alt="graphic-image">
                                 </div>
                                 <div class="widget__desc">
-                                    <h3>This is how I met Kori</h3>
-                                    <a href="#" class="link">Read More</a>
+                                    <h3>This is how I met Kori</h3><span id="dot"></span> <span id="first"></span>
+                                    <a href="#" onclick="firstFunction()" id="linkk"   >Read More</a>
+                                  
                                 </div>
                             </div>
                             <div class="widget">
-                                <div class="widget__image">
+                                <div class="widget__image"> 
                                     <img src="images/stories/2.png" alt="graphic-image">
                                 </div>
                                 <div class="widget__desc">
-                                    <h3>I can’t live without Nochi.</h3>
-                                    <a href="#" class="link">Read More</a>
+                                    <h3>I can’t live without Nochi</h3> <span id="dots"></span> <span id="second"></span>
+                                    <a href="#"onclick="myFunction()" id="link"   >Read More</a>
                                 </div>
                             </div>
                             <div class="widget">
@@ -192,8 +183,8 @@
                                     <img src="images/stories/3.png" alt="graphic-image">
                                 </div>
                                 <div class="widget__desc">
-                                    <h3>My cat, My new friend!</h3>
-                                    <a href="#" class="link">Read More</a>
+                                    <h3>My cat, My new friend!</h3><span id="dotss"></span> <span id="third"></span>
+                                    <a href="#"onclick="thirdFunction()" id="linkkk"  >Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -244,12 +235,12 @@
                             <ul>
                                 <li><a href="#">Donate</a></li>
                                 <li><a href="#">Corporate giving</a></li>
-                            </ul>
-                        </div>
+      </ul>
+  </div>
                     </div>
                 </div>
             </footer>
         </div>
     </body>
-    
+    <script src="index.js"></script>
     </html>

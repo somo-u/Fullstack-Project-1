@@ -56,15 +56,33 @@ p {
   background-color: #ddd;
   color: black;
 }
+
+
+
+header .is-active .navbar-nav{
+
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
 .navbar-collapse{
   background: none;
-    display: inline-block;
+    display:none;
  }
+
  .logo{
      margin:20px;
  }
  .navbar-nav{
      margin-left:750px ;
+     
+ }
+ ul.navbar-nav{
+   display: inline-flex;
  }
  .mobile-container {
   max-width: 480px;
@@ -121,6 +139,7 @@ a.button.is-primary{
   text-align: center;
   position: relative;
   font-size: 18px;
+  padding: 3px;
 }
 
 .hero h1{
@@ -202,7 +221,8 @@ padding-top: 30px;
 }
 .form-group button {
   height: 7%;
-  width: 13%;
+  padding-left: 15px;
+  padding-right: 15px;
   color: white;
   border-radius: 30px;
   border: 4px solid rgb(72, 72, 230);
@@ -212,7 +232,7 @@ padding-top: 30px;
   right: 50px;
 }
 
-.meetYourMatch .is-searchResults {
+.meetYourMatch .thewidget {
   margin-left: 80px;
   margin-right: 80px;
   display: flex;
@@ -230,7 +250,7 @@ padding-top: 30px;
 .howItWorks  {
 
   padding-top: 200px;
-  padding-left: 100px;
+  padding-left: 50px;
     
   }
  .container .widgets.is-howItWorks {
